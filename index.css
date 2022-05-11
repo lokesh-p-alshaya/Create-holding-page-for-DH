@@ -1,0 +1,283 @@
+
+
+*{
+  margin:0;
+  padding: 0;
+  /* border: 1px solid cyan; */
+}
+input{
+  outline: none;
+}
+.header{
+  display: flex;
+  /* width: 1284px; */
+  /* height: 1418px; */
+  padding: 20px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.header-right{
+  display: flex;
+}
+.Debhenams{
+  /* margin-left: 32px; */
+  font-size: 30px;
+  /* margin-left: 32px; */
+  padding-top: 38px;
+}
+.English{
+padding-top: 55px;
+max-width: 51px;
+  height: 25px;
+  font-family: SofiaPro;
+  font-size: 15px;
+  text-align: center;
+  /* margin-left: 1060px; */
+}
+ .Arabic{
+   padding-top: 50px;
+   margin-left: 50px;
+ }
+ .Img{
+   padding-top: 37px;
+  max-width: 1540px;
+    width: 100%;
+
+ }
+ .Footer{
+   display: flex;
+   margin-right: 10%;
+   justify-content: space-evenly;
+   position: relative;
+ }
+ .Footer-left{
+   padding-left: 134px;
+   margin-right: 10%;
+ } 
+ #Details{
+  
+  max-width: 187px;
+  max-height: 19px;
+  font-family: SofiaPro;
+  font-size: 16px;
+  font-weight: 300px;
+  color: #161616;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding-top: 30px;
+}
+#Discount{
+  
+  max-width: 266px;
+  max-height: 93px;
+  font-family: Juana;
+  font-size: 72px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+#Purchase{
+ 
+  font-family: SofiaPro;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #161616;
+  max-width: 209px;
+  max-height: 19px;
+}
+#Online{
+  padding-top: 40px;
+ 
+  font-family: SofiaPro;
+  font-size: 18px;
+  font-weight:600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+  /* width: 490px; */
+  max-height: 23px; 
+}
+#Launching , #new{  
+  padding-top: 18px;
+ 
+  font-family: SofiaPro;
+  font-weight: 300;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  max-width: 432px;
+  max-height: 38px;  
+  color: #161616;
+}
+ 
+
+
+.footer2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4% 0 4%; 
+  background-color: #eeeeee;
+  height: 106px;
+  margin-top: 137px;
+
+}
+
+.footer-right{
+  display: flex;
+  font-family: SofiaPro;
+ align-items: center;
+width: 170px;
+justify-content: space-between;
+
+ 
+}
+.footer-logo{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 18px;
+}
+.footer-logo img{
+  height: 100%;
+
+}
+.Last-Name{
+padding-left: 20px;
+}
+
+
+.submit-btn{
+  color: #ffffff;
+  background-color:#1b1b1b !important;
+  width: 228px!important;
+  height: 25px!important;
+  text-align: center;
+  margin-top: 47px;
+
+}
+.warning{
+  position: absolute;
+    width: 30%;
+    right: 8%;
+    bottom: -12%;
+    color: green;
+}
+
+#warn{
+  visibility:hidden;
+}
+p{
+  /* padding-top: 15px; */
+}
+.foter-left p {
+  width: 260px;
+  height: 14px;
+  /* margin: 5px 511px 5px 0; */
+  font-family: SofiaPro;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1b1b1b;
+}
+.Main{
+  display: flex;
+  justify-content: center;
+}
+
+
+ .wrapper{
+  display: flex;
+  padding-top: 40px;
+  /* margin-left: 180px; */
+  
+}
+.wrapper .input-data{
+height: 40px;
+/* width: 250px; */
+width: 45%;
+position: relative;
+}
+.wrapper .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #444444;
+  background: transparent;
+
+}
+.wrapper .input-data label{
+  position:absolute;
+  bottom: 3px;
+  left:0;
+  color: #999  ;
+  padding-left: 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+.wrapper .input-data input:focus ~ label,
+.wrapper .input-data input:valid ~ label {
+  top: -1px;
+  left: 0;
+  color: grey;
+  font-size: 12px;
+} 
+
+
+@media (min-width:320px) and (max-width:700px) {
+  .Footer{
+    display: grid;
+    place-items: center;
+    margin-right: 0;
+  }
+  .wrapper{
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 290px;
+  }
+  .Footer-left{
+    padding-left: 15px;
+  }
+ .footer2{
+   /* display: none; */
+   margin-top: 10px;
+   height: 60px;
+ }
+ .footer2 p{
+   font-size: 12px;
+ }
+ .submit-btn{
+  color: #ffffff;
+  background-color:#1b1b1b;
+  width: 210%!important;
+  height: 25px;
+  text-align: center;
+  margin-top: 47px;
+
+}
+.warning{
+  position: absolute;
+    width: 88%;
+    font-size: 12px;
+    bottom: -1%;
+    color: green;
+}
+}
+

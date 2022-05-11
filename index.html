@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>Debenhams</title>
+</head>
+<body>
+<script src="index.js"></script>
+<div class="header">
+    <div >
+        <p class="Debhenams"> Debhenams</p>
+    </div>
+    <div class="header-right">
+    <div>
+        <p class="English"> English</p>
+
+    </div>
+    <div>
+        <p class="Arabic"> العربية</p>
+    </div>
+</div>
+</div>   
+
+<div class="Main">
+<div>
+    <img class="Img" src="./img.png" alt="not responding"/>
+</div>
+
+</div>
+<div class="Footer">
+    <div class="Footer-left">
+        <p id="Details"> Enter Your Details</p>
+        <br/>
+        <span id="Discount">20% off</span>
+        <p id="Purchase">on your first online purchase.</p>
+        <p id="Online">Your Debenhams online store is coming soon.</p>
+        <p id="Launching">Get ready Kuwait! We’re excited to announce Debenhams</p>
+        <p id="new"> online will be launching soon. Stay tuned to find out more..</p>
+    </div>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+<div class="wrapper">
+    <div class="input-data ">
+    <input type="text" name="fname" id="fname" required>
+    <div class="underline"></div>
+    <label> First Name</label>
+         <div class="input-data"  style="padding-top: 20px; width:210%">
+    <input type="email" name="email" id="email" required>
+    <div class="underline"></div>
+    <label> Email</label>
+</div>   
+<div class="input-data" style="padding-top: 20px; width: 210%">
+    <input type="number" id="contact-no" required>
+    <div class="underline"></div>
+    <label> Contact number</label>
+</div>  
+<div class="Sign-up" id="submitButton" >
+    <!-- <button class="submit-btn">SIGN UP</button> -->
+    <input class="submit-btn" type="submit" onclick="myfunc(event)" value="SIGN UP" >
+</div>
+
+
+</div>
+<div class="input-data" style="margin-left: 30px" >
+    <input type="text" id="lname" required>
+    <div class="underline"></div>
+    <label> Last Name</label>    
+</div>
+
+
+
+</div>
+</form>
+<div class="warning" id="warn">
+    Almost finished! WE need to confirm your email address.To complete the subscription process, please click the link in the email
+    we sent you.
+</div>
+
+</div>
+
+<div class="footer2">
+
+    <div class="footer-left">
+       <p>© 2021 Debenhams Limited. All Rights Reserved</p> 
+    </div>
+    <div class="footer-right">
+      
+       <p> Follow Us</p> 
+       <div class="footer-logo">
+           <img src="./fill-9@2x.png" />
+           <img src="./instagram.png" />
+           <img src="./spotify-logo.png" />
+        </div>
+
+        
+    </div>  
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["email"].value;
+  if (x != "") {
+    document.getElementById("warn").style.visibility = "visible"
+    return false;   
+  }
+}
+
+function myfunc(event){
+event.preventDefault();
+
+
+
+var first_name = document.getElementById("fname").value
+var last_name = document.getElementById("lname").value
+var email = document.getElementById("email").value
+var contact_no = document.getElementById("contact-no").value
+
+
+localStorage.setItem('ls-fname', first_name);
+localStorage.setItem('ls-lname', last_name);
+localStorage.setItem('ls-email', email);
+localStorage.setItem('ls-contact-no', contact_no);
+
+
+}
+
+</script>
